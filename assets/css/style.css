@@ -1,0 +1,177 @@
+:root {
+    --primary-color: #221122;
+    --secondary-color: #303030;
+    --tertiary-color: #22aacc;
+    --fourth-color: #ffd829;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+a:hover {
+    border-bottom: solid var(--fourth-color);
+}
+
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+}
+
+section {
+    padding: 50px;
+    background-color: var(--secondary-color);
+    margin: 50px 200px;
+}
+
+header {
+    padding: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    background-color: var(--primary-color);
+}
+
+
+header div h1 {
+    font-size: 30px;
+    padding: 15px;
+    padding-top: 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 15px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    background-image: url("../images/hourglass-nebula.jpg");
+    background-size: cover;
+    background-position: center;
+    background-position: 50%;
+
+    margin: 0;
+}
+
+.quotebox {
+    width: 700px;
+    height: 500px;
+    color: var(--tertiary-color);
+    text-shadow: 2px 2px 16px rgba(0, 0, 0, 1);
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    margin: 360px 0 0 200px;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.sagan {
+    margin-top: 30px;
+    text-align: right;
+}
+
+#about-me-text {
+    margin-right: 50px;
+    font-size: 20px;
+    flex: 0 1 100%;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.border-box {
+    justify-content: flex-end;
+    display: flex;
+    flex: 0 1 20%;
+    min-width: 20ch;
+}
+
+.content-box {
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 80%;
+}
+
+.section-title {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 36px;
+    font-weight: bold;
+    padding-right: 20px;
+    margin-right: 20px;
+    width: 200px;
+    border-right: solid var(--tertiary-color);
+    flex: 1;
+}
+
+.profile-pic {
+    flex: 1 30%;
+    width: 250px;
+    height: 250px;
+    
+}
+
+.profile-pic img {
+    display: flex;
+    max-height: 100%;
+    margin-left: 20px;
+}
+
+
+#my-work .content-box {
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 400px;
+    height: 225px;
+    overflow: hidden;
+    border: solid var(--primary-color);
+}
+
+.project-card img {
+    max-width: 100%;
+    display: none;
+}
+
+.project-card a {
+    font-size: 50px;
+}
+
+#contact-me h3 {
+    font-size: 24px;
+}
+
+#contact-me a {
+    font-size: 20px;
+}

@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
     <title>My Portfolio</title>
 </head>
 <body>
 
     <header>
-        <h1>
-            <a href="/index.html">Jimmy Lee</a>
-        </h1>
+        <div>
+            <h1>
+                <a href="index.html">Jimmy Lee</a>
+            </h1>
+        </div>
         <nav>
             <ul>
                 <li>
@@ -30,53 +32,89 @@
 
     <!-- Hero -->
     <section class="hero">
-        <h2>Some cool subtitle</h2>
-    </section>
-
-    <section class="about-me">
-        <h2 class="section-title">About Me</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id enim repudiandae cum odio iste quidem et eveniet nemo. Aspernatur voluptates quidem similique quae illum odio dolor molestiae doloribus voluptatum a.
-        </p>
-    </section>
-
-    <section class="my-work">
-        <h2 class="section-title">My Work</h2>
-
-        <!-- Run buddy -->
-        <div class="card">
-            <a href="#">Run Buddy</a>
-        </div>
-
-        <!-- Robot Gladiators -->
-        <div class="card">
-            <a href="#">Robot Gladiators</a>
-        </div>
-
-        <!-- A future project -->
-        <div class="card">
-            <a href="#">A Future Project</a>
-        </div>
-
-        <!-- and many more... -->
-        <div class="card">
-            <a href="#">And many more...</a>
+        <div class="quotebox">
+            <div class="quote">
+                <h2>
+                    “Imagination will often carry us to worlds that never were, but without it we go nowhere.”
+                </h2>
+            </div>
+            <div class="sagan">
+                <h2>
+                    ― Carl Sagan
+                </h2>
+            </div>
         </div>
     </section>
 
-    <section class="contact-me">
-        <h2 class="section-title">Contact Me</h2>
-        <div>
-            <h3>Phone</h3>
-            <a href="">216-246-5336</a>
+    <section id="about-me">
+        <div class="flex-row">
+            <div class="border-box">
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="content-box">
+                <p id="about-me-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id enim repudiandae cum odio iste quidem et eveniet nemo. Aspernatur voluptates quidem similique quae illum odio dolor molestiae doloribus voluptatum a.
+                </p>
+                <div class="profile-pic">
+                    <img src="./assets/images/my-picture.jpg" alt="Jimmy Lee's beautiful face"/>
+                </div>
+            </div>
         </div>
-        <div>
-            <h3>Email</h3>
-            <a href="mailto:misterjimlee@gmail.com">misterjimlee@gmail.com</a>
+    </section>
+
+    <section id="my-work">
+        <div class="flex-row">
+            <div class="border-box">
+                <h2 class="section-title">My Work</h2>
+            </div>
+
+            <div class="content-box">
+                <!-- Run buddy -->
+                <div class="project-card">
+                    <img src="assets/images/runners.jpg" alt="Runners on the way to the finish line"/>
+                    <a href="#">Run Buddy</a>
+                </div>
+
+                <!-- Robot Gladiators -->
+                <div class="project-card">
+                    <img src="assets/images/robo-sword.jpg" alt="A sword-wielding robot"/>
+                    <a href="#">Robot Gladiators</a>
+                </div>
+
+                <!-- A future project -->
+                <div class="project-card">
+                    <img src="assets/images/breadboard.jpg" alt="Computer circuitry"/>
+                    <a href="#">A Future Project</a>
+                </div>
+
+                <!-- and many more... -->
+                <div class="project-card">
+                    <img src="assets/images/pirate-telescope.jpg" alt="Pirate looking through his telescope"/>
+                    <a href="#">And many more...</a>
+                </div>
+            </div>
         </div>
-        <div>
-            <h3>GitHub</h3>
-            <a href="github.com/misterjimlee">github.com/misterjimlee</a>
+    </section>
+
+    <section id="contact-me">
+        <div class="flex-row">
+            <div class="border-box">
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+            <div class="content-box">
+                <div>
+                    <h3>Phone</h3>
+                    <a href="">216-246-5336</a>
+                </div>
+                <div>
+                    <h3>Email</h3>
+                    <a href="mailto:misterjimlee@gmail.com">misterjimlee@gmail.com</a>
+                </div>
+                <div>
+                    <h3>GitHub</h3>
+                    <a href="github.com/misterjimlee">github.com/misterjimlee</a>
+                </div>
+            </div>
         </div>
     </section>
     
