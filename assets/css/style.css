@@ -42,6 +42,7 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 999;
 
     background-color: var(--primary-color);
 }
@@ -102,6 +103,7 @@ header nav ul li a {
     margin-right: 50px;
     font-size: 20px;
     flex: 0 1 100%;
+    line-height: 1.5;
 }
 
 .flex-row {
@@ -155,17 +157,37 @@ header nav ul li a {
 .project-card {
     width: 400px;
     height: 225px;
+    margin: 10px;
     overflow: hidden;
     border: solid var(--primary-color);
+    position: relative;
 }
 
 .project-card img {
     max-width: 100%;
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .project-card a {
-    font-size: 50px;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding: 20px;
+    z-index: 100;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--primary-color);
+    display: block;
+}
+
+.project-card a:hover {
+    border: none;
+}
+
+.project-card:hover {
+    border: solid var(--fourth-color);
 }
 
 #contact-me h3 {
@@ -174,4 +196,12 @@ header nav ul li a {
 
 #contact-me a {
     font-size: 20px;
+}
+
+
+@media screen and (max-width: 1150px) {
+    section {
+        margin: 50px 0;
+        width: 100%;
+    }
 }
